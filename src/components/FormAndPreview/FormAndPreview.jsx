@@ -62,7 +62,7 @@ class FormAndPreview extends Component {
         this.state.punkid =e.target.id;
       }
       window.alert('Home Owner Unassigned' + this.state.punkid  );
-      this.setState({ punkid });
+//      this.setState({ punkid });
     }
 
   componentDidMount = async () => {

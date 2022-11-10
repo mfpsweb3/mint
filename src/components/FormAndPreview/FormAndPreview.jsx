@@ -57,6 +57,7 @@ class FormAndPreview extends Component {
     }
   }
   Load_New_Image= async (e)=>{
+    window.alert('Home Owner Unassigned');
 //      this.state.punkid =e.target.value;
 //      if (e.target.value ==undefined) {
 //        this.state.punkid =e.target.id;

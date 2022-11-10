@@ -106,7 +106,7 @@ class FormAndPreview extends Component {
         type="number"
         name="punkid"
         id="punkid"
-        value="20"
+        value="0"
         className="form-control"
         placeholder="Mint Amount"
         onChange={(e) =>

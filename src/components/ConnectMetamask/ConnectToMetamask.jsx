@@ -53,11 +53,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     <div>
       <div className="jumbotron">
         <h1 className="display-5">
-          Skelly Club
+          mfpsweb3.com
         </h1>
+
         BRINGING CREATIVITY, FASHION AND FUN TO THE DEAD
         <hr className="my-4" />
-        <img src="images/skellyclub.png" width="100%" />
+        <img src="images/0.png" width="100%" />
         <hr className="my-4" />
         <button
           onClick={connectToMetamask}

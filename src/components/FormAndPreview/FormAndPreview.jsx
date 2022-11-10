@@ -61,16 +61,14 @@ class FormAndPreview extends Component {
       if (e.target.value ==undefined) {
         this.state.punkid =e.target.id;
       }
-      window.alert('Home Owner Unassigned' + this.state.punkid);
+      window.alert('Home Owner Unassigned' + this.state.punkid + );
+      this.setState({ punkid });
     }
 
   componentDidMount = async () => {
 
     window.scrollTo(0, 0);
     console.log(this.props);
-    let punkid = new URLSearchParams(this.props.location.search).get( "punkid" );
-    if(punkid === '' || punkid === null || punkid === undefined)punkid = "1";
-    this.setState({ punkid });
 
   };
 
@@ -108,7 +106,6 @@ class FormAndPreview extends Component {
         type="number"
         name="punkid"
         id="punkid"
-        value="20"
         className="form-control"
         placeholder="Enter Home NO"
         onChange={(e) =>

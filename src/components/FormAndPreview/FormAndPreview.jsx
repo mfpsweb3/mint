@@ -111,6 +111,13 @@ class FormAndPreview extends Component {
         placeholder="Mint Amount"
 
       />
+      <input placeholder="punkid"
+       value={this.state.punkid}
+       onChange={e => {
+           this.setState({ punkid: e.target.value });
+           this.value = this.state.punkid;
+       }}
+       />
     </div>
 
 

@@ -61,7 +61,7 @@ class FormAndPreview extends Component {
       if (e.target.value ==undefined) {
         this.state.punkid =e.target.id;
       }
-      window.alert('Home Owner Unassigned' + this.state.punkid + );
+      window.alert('Home Owner Unassigned' + this.state.punkid  );
       this.setState({ punkid });
     }
 

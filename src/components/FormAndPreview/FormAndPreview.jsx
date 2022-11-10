@@ -61,39 +61,6 @@ class FormAndPreview extends Component {
       if (e.target.value ==undefined) {
         this.state.punkid =e.target.id;
       }
-//      window.alert(this.state.punkid);
-      if(this.state.punkid<1 || this.state.punkid>8000){
-        this.state.punkid = 1
-      }
-      var developedLand = 1;
-      const home = db[this.state.punkid];
-
-      if (home.homeurl != "Undeveloped"){
-          developedLand = 6;
-      }
-      var tmpLotSize = home.lotsize + "";
-      this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
-      this.state.gasScoreLot = this.state.gasScoreLot * 3;
-
-      this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
-      this.state.gasScoreHome = this.state.gasScoreHome * 2
-
-      this.state.gasScore = (8001-this.state.punkid) * 18 * developedLand;
-
-      this.state.homeStyle = home.homestyle;
-
-      var s = this.state.punkid+"";
-      while (s.length < 4) s = "0" + s;
-
-      var newImageUrl = '/images/punks/punk-' + s + 'x8.png';
-      this.setState({
-        cryptoBunkImageURL : newImageUrl
-      })
-
-      this.state.gasTotal = this.state.gasScoreLot + this.state.gasScore  + this.state.gasScoreHome;
-      //this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
-      //window.alert('Not Available: Home Owner ' + home.lotsize);
-
     }
 
   componentDidMount = async () => {
@@ -191,7 +158,7 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-    <h6 class="card-subtitle mb-2">Mint Amount (Max 5 per Wallet)</h6>
+    <h6 class="card-subtitle mb-2">Mint Amount (Max 20 per Wallet)</h6>
     <div>
       <input
         required
@@ -211,7 +178,7 @@ class FormAndPreview extends Component {
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
           <div className="col-md-12">
-            Mint Price 0.01 ETH, First 2000 is Free
+            Mint Price 0.03 ETH
             <div>
               <button
                 id="mintBtn22"
@@ -230,7 +197,7 @@ class FormAndPreview extends Component {
         </div>
 
           <hr className="my-4" />
-              Skelly Club &copy; 2021 All rights reserved.
+              mfpsweb3 &copy; 2021 All rights reserved.
           <hr className="my-4" />
       </div>
     );

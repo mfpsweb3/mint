@@ -76,7 +76,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <div className="container">
         <hr className="my-4" />
-            Skelly Club &copy; 2021 All rights reserved.
+            mfpsweb3 &copy; 2021 All rights reserved.
         <hr className="my-4" />
       </div>
     </div>

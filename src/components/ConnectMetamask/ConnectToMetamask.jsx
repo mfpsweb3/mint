@@ -55,8 +55,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <h1 className="display-5">
           mfpsweb3.com
         </h1>
-
-        BRINGING CREATIVITY, FASHION AND FUN TO THE DEAD
+        Web3 players will fight in fast-paced small maps with similar gameplay mechanics to Counter Strike: Global Offensive.
         <hr className="my-4" />
         <img src="images/0.png" width="100%" />
         <hr className="my-4" />

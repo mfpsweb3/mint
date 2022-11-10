@@ -57,10 +57,10 @@ class FormAndPreview extends Component {
     }
   }
   Load_New_Image= async (e)=>{
-      this.state.punkid =e.target.value;
-      if (e.target.value ==undefined) {
-        this.state.punkid =e.target.id;
-      }
+//      this.state.punkid =e.target.value;
+//      if (e.target.value ==undefined) {
+//        this.state.punkid =e.target.id;
+//      }
     }
 
   componentDidMount = async () => {

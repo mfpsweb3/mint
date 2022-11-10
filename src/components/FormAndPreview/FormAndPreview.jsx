@@ -178,7 +178,7 @@ class FormAndPreview extends Component {
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
           <div className="col-md-12">
-            Mint Price 0.03 ETH
+            Mint Price 0.011111 ETH
             <div>
               <button
                 id="mintBtn22"

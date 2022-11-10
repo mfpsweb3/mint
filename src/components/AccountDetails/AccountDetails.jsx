@@ -4,13 +4,13 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-5">SkellyClub</h1>
+        <h1 className="display-5">mfpsweb3</h1>
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
-                  Click the mint button above to  Mint a SkellyClub Token
+                  Click the mint button above to  Mint a Token
                   <hr className="my-4" />
-                  
+
             </p>
           </div>
         </div>

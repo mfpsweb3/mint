@@ -109,9 +109,7 @@ class FormAndPreview extends Component {
         value="0"
         className="form-control"
         placeholder="Mint Amount"
-        onChange={(e) =>
-          this.Load_New_Image(e)
-        }
+
       />
     </div>
 

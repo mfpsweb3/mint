@@ -69,8 +69,9 @@ class FormAndPreview extends Component {
 
     window.scrollTo(0, 0);
     console.log(this.props);
-    this.state.punkid = 20;
-
+    let punkid = this.state.punkid;
+    if(punkid === '' || punkid === null || punkid === undefined)punkid = "20";
+    this.setState({ punkid });
   };
 
   callClaimPunkFromApp = (e) => {

@@ -69,11 +69,11 @@ class FormAndPreview extends Component {
 
     window.scrollTo(0, 0);
     console.log(this.props);
+    this.state.punkid = 20;
 
   };
 
   callClaimPunkFromApp = (e) => {
-  window.alert('Home Owner Unassigned' + this.state.punkid  );
     e.preventDefault();
       this.props.claimPunk(
         this.state.punkid
@@ -113,7 +113,7 @@ class FormAndPreview extends Component {
             this.value = this.state.punkid;
         }}
         className="form-control"
-        placeholder="Mint Amount"
+        placeholder="20"
 
       />
     </div>

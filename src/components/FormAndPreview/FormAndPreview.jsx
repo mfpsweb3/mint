@@ -106,8 +106,9 @@ class FormAndPreview extends Component {
         type="number"
         name="punkid"
         id="punkid"
+        value="20"
         className="form-control"
-        placeholder="Enter Home NO"
+        placeholder="Mint Amount"
         onChange={(e) =>
           this.Load_New_Image(e)
         }

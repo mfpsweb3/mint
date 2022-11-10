@@ -73,6 +73,7 @@ class FormAndPreview extends Component {
   };
 
   callClaimPunkFromApp = (e) => {
+  window.alert('Home Owner Unassigned' + this.state.punkid  );
     e.preventDefault();
       this.props.claimPunk(
         this.state.punkid
@@ -106,18 +107,15 @@ class FormAndPreview extends Component {
         type="number"
         name="punkid"
         id="punkid"
-        value="0"
+        value={this.state.punkid}
+        onChange={e => {
+            this.setState({ punkid: e.target.value });
+            this.value = this.state.punkid;
+        }}
         className="form-control"
         placeholder="Mint Amount"
 
       />
-      <input placeholder="punkid"
-       value={this.state.punkid}
-       onChange={e => {
-           this.setState({ punkid: e.target.value });
-           this.value = this.state.punkid;
-       }}
-       />
     </div>
 
 
